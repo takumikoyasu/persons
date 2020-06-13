@@ -1,18 +1,18 @@
 require 'test_helper'
 
-class PersonsControllerTest < ActionDispatch::IntegrationTest
+class HumansControllerTest < ActionDispatch::IntegrationTest
   test "should get index" do
-    get persons_index_url
+    get humans_index_url
     assert_response :success
   end
 
   test "should get new" do
-    get persons_new_url
+    get humans_new_url
     assert_response :success
   end
 
   test "should get create" do
-    get persons_create_url
+    get humans_create_url
     assert_response :success
   end
 

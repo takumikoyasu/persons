@@ -10,7 +10,7 @@ class HumansController < ApplicationController
 
   def create
     Human.create(human_params)
-    
+    redirect_to root_path
   end
 
   private

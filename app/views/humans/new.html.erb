@@ -1,0 +1,9 @@
+<div class="content__title">
+  新規の作成
+</div>
+
+<%= form_with model: @human, url: humans_path, class: :form, local: true do |f| %>
+  <%= f.text_field :name, placeholder: :名前, class: :form__title %>
+  <%= f.text_area :episode, placeholder: :エピソード, class: :form__text %>
+  <%= f.submit '作成する', class: :form__btn %>
+<% end %>

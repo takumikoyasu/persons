@@ -1,0 +1,9 @@
+<div class="">
+  <% @humans.each do |human| %>
+    <%= human.name %>
+    <%= human.episode %>
+  <% end %>
+</div>
+<div>
+<%= link_to "登録する", new_human_path, class: "" %>
+</div>
